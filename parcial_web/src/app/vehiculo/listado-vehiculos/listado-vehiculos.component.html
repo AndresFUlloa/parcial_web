@@ -1,0 +1,30 @@
+
+<div class="row">
+  <div class="col-6">
+    <table class="table">
+      <thead class="text-light bg-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Marca</th>
+          <th scope="col">Linea</th>
+          <th scope="col">Modelo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let vehiculo of vehiculos">
+          <th scope="row" class="td-vehiculo-id">{{vehiculo.id}}</th>
+          <td class="td-vehiculo-marca">{{vehiculo.marca}}</td>
+          <td class="td-vehiculo-linea">{{vehiculo.linea}}</td>
+          <td class="td-vehiculo-modelo">{{vehiculo.modelo}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="col-6"></div>
+</div>
+<div class="row">
+  <div class="col-12">
+    <p style="margin-bottom: 0;" *ngFor="let total of totales">Total {{total.marca}}: {{total.total}}</p>
+  </div>
+</div>
+
